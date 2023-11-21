@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "3b4d82c2-12db-424e-ab54-677e499a5f5c",
+		"name": "ManjitPostmanCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29844067"
+	},
+	"item": [
+		{
+			"name": "Register user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userData",
+							"value": "{\n\"name\":\"biswajit Nayak\",\n\"gender\":\"male\",\n\"email\":\"nayak@gmail.com\",\n\"password\":\"nayak@123\"\n}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8088/assignment/registerUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"assignment",
+						"registerUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get All Register User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/assignment/getAllUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"assignment",
+						"getAllUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loginByEmailAndPassword",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/assignment/loginByEmailAndPassword?email=nayak@gmail.com&password=nayak@123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"assignment",
+						"loginByEmailAndPassword"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "nayak@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "nayak@123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteByEmail",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/assignment/deleteByEmail?email=hari@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"assignment",
+						"deleteByEmail"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "hari@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
